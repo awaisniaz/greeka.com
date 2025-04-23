@@ -7,8 +7,8 @@ async function bootstrap() {
 
   app.useGlobalPipes(new ValidationPipe({ transform: true, whitelist: true }));
   const options = new DocumentBuilder()
-    .setTitle('Lexim API')
-    .setDescription('Lexim Backend')
+    .setTitle('Todo Api')
+    .setDescription('Todo Backend')
     .setVersion('1.0')
     .addBearerAuth()
     .build();

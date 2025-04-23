@@ -8,11 +8,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [
     TaskModule,
     TypeOrmModule.forRoot({
-      url: 'postgresql://postgres:ZYZ9SUDNL10GWqPz@db.tsthsunvebrfvjrhlked.supabase.co:5432/postgres',
+      url: 'postgresql://postgres.qhpafvhqruzxezejvepu:Awaisniaz@1234@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres',
       type: 'postgres',
-      ssl: {
-        rejectUnauthorized: false,
-      },
+      // ssl: {
+      //   rejectUnauthorized: false,
+      // },
 
       entities: [__dirname + '/../**/entities/*.entity{.ts,.js}'],
       // Timezone configured on the Postgres server.
